@@ -1,0 +1,48 @@
+@import '../../utils/vars';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    margin: 0;
+    color: #252733;
+    align-self: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-right: 1px solid $borderColor;
+    padding-right: 32px;
+    margin-right: 32px;
+    height: 32px;
+  }
+
+  &__img {
+    height: 16px;
+    width: 16px;
+  }
+
+  &__account-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__account-img {
+    height: 44px;
+    width: 44px;
+  }
+}

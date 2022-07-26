@@ -1,0 +1,79 @@
+@import '../../utils/vars';
+
+.sidebar {
+  background-color: $mainBackgroundColor;
+  display: flex;
+  flex-direction: column;
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 37px 32px;
+  }
+
+  &__logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  &__brand {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: $textSidebarColor;
+    opacity: 0.7;
+  }
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    border-left: 3px solid transparent;
+    padding-left: 29px;
+
+    &:hover {
+      background-color: rgba(#9FA2B4, 0.08);
+      border-left: 3px solid #DDE2FF;
+
+      .navigation__title {
+        color: #DDE2FF;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 18px 0;
+  }
+
+  &__img {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $textSidebarColor;
+  }
+
+  &__line {
+    border-bottom: 1px solid rgba(#DFE0EB, 0.06);
+    margin: 16px 0;
+  }
+}
