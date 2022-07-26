@@ -1,26 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { UserRow } from '../UserRow';
 import './UsersTable.scss';
+import { getUser } from '../api/api';
+// eslint-disable-next-line import/extensions, import/no-unresolved
+import { UpdateUser } from '../../react-app-env';
 
 export const UsersTable = () => {
-  return (
-    <div className="users-container">
-      <div className="users-container__header">
+  const [users, setUsers] = useState<UpdateUser []>([]);
 
+  useEffect(() => {
+    getUser()
+      .then(usersFromServer => setUsers(usersFromServer));
+  });
+
+  return (
+    <div className="App__users-container users-container">
+      <div className="users-container__header">
+        <h2 className="users-container__header-title">All users</h2>
+        <div className="users-container__header-sort">
+          <img className="users-container__header-sort-img" src="./images/sort_icon.png" alt="sort-icon" />
+          <span className="users-container__header-sort-name">Sort</span>
+        </div>
       </div>
+
       <table className="users-container__table table">
-        <thead>
-          <tr>
-            <th>User details</th>
-            <th>Company name</th>
-            <th>Email</th>
-            <th>Distance</th>
-            <th> </th>
+        <thead className="table__thead">
+          <tr className="table__tr">
+            <th className="table__th">User details</th>
+            <th className="table__th">Company name</th>
+            <th className="table__th">Email</th>
+            <th className="table__th">Distance</th>
+            <th className="table__th"> </th>
           </tr>
         </thead>
 
-        <tbody>
-          <UserRow />
+        <tbody className="table__tbody">
+          {users.map(user => (
+            <UserRow key={user.id} user={user} />
+          ))}
         </tbody>
       </table>
     </div>

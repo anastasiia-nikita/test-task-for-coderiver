@@ -1,0 +1,43 @@
+@import '../../utils/vars';
+@import '../../utils/mixins';
+@import './table.scss';
+
+.users-container {
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px 0;
+    margin-bottom: 48px;
+  }
+
+  &__header-title {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: $textMainColor;
+    margin: 0;
+  }
+
+  &__header-sort {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__header-sort-img {
+    @include iconSize;
+  }
+
+  &__header-sort-name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #4B506D;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../utils/vars';
+
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+
+  &__thead {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $tableHeaderColor;
+  }
+
+  &__tr {
+    text-align: left;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  &__th {
+    padding: 0 32px 12px 32px;
+  }
+}

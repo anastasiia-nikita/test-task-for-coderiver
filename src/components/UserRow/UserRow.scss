@@ -1,0 +1,48 @@
+@import '../../utils/vars';
+
+.user-row {
+  border-bottom: 1px solid $borderColor;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__item {
+    padding: 24px 32px;
+
+    &--width {
+      width: 35%;
+    }
+  }
+
+  &__item-details {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__item-img {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__item-title {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $textMainColor;
+    margin-bottom: 4px;
+  }
+
+  &__item-subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+
+    color: $tableGreyColor;
+  }
+}

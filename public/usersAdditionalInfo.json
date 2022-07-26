@@ -1,0 +1,34 @@
+[
+  {
+    "photo": "./images/users/1_man.png",
+    "distance": "high"
+  },
+  {
+    "photo": "./images/users/2_woman.png",
+    "distance": "low"
+  },
+  {
+    "photo": "./images/users/3_woman.png",
+    "distance": "high"
+  },
+  {
+    "photo": "./images/users/4_man.png",
+    "distance": "normal"
+  },
+  {
+    "photo": "./images/users/5_man.png",
+    "distance": "high"
+  },
+  {
+    "photo": "./images/users/6_man.png",
+    "distance": "normal"
+  },
+  {
+    "photo": "./images/users/7_woman.png",
+    "distance": "low"
+  },
+  {
+    "photo": "./images/users/8_woman.png",
+    "distance": "normal"
+  }
+]

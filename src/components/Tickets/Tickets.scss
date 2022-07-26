@@ -1,0 +1,23 @@
+@import '../../utils/vars';
+
+.tickets {
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $borderColor;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

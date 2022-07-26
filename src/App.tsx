@@ -3,6 +3,7 @@ import './App.scss';
 import { Header } from './components/Header';
 import { NumbersBlocks } from './components/NumbersBlocks';
 import { Sidebar } from './components/Sidebar';
+import { TicketsTaskBlock } from './components/TicketsTaskBlock';
 import { UsersTable } from './components/UsersTable';
 
 export const App: React.FC = () => {
@@ -14,6 +15,7 @@ export const App: React.FC = () => {
         <Header />
         <NumbersBlocks />
         <UsersTable />
+        <TicketsTaskBlock />
       </main>
     </div>
   );
