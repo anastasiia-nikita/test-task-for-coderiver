@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tickets.scss';
 
-export const Tickets = () => (
+export const Tickets: React.FC = () => (
   <div className="tickets">
     <div className="tickets__header">
       <div className="tickets__header-info">

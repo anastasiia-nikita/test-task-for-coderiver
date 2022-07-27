@@ -1,6 +1,6 @@
 import React from 'react';
-import { Tasks } from '../Tasks';
-import { Tickets } from '../Tickets/Tickets';
+import { Tasks } from './Tasks';
+import { Tickets } from './Tickets';
 import './TicketsTaskBlock.scss';
 
 export const TicketsTaskBlock: React.FC = () => (

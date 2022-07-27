@@ -1,9 +1,9 @@
 @import '../../utils/vars';
+@import '../../utils/mixins.scss';
 
 .table {
-  // width: 100%;
   border-collapse: collapse; 
-  // flex-grow: 1;
+  width: 100%;
 
   &__thead {
     font-weight: 700;
@@ -20,5 +20,9 @@
 
   &__th {
     padding: 0 32px 12px 32px;
+
+    @include onTablet {
+      padding: 10px;
+    }
   }
 }

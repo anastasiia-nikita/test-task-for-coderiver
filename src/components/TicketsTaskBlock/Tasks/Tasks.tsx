@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../Button';
-import { CustomCheckbox } from '../CustomCheckbox';
+import { Button } from '../../CustomButton';
+import { CustomCheckbox } from '../../CustomCheckbox';
 import './Tasks.scss';
 
 export const Tasks = () => (

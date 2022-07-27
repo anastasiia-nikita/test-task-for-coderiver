@@ -1,10 +1,9 @@
-@import '../../utils/vars';
+@import '../../../utils/vars';
 
 .tasks {
   border: 1px solid $borderColor;
   border-radius: 8px;
   flex-grow: 1;
-  // width: 100%;
 
   &__header {
     display: flex;

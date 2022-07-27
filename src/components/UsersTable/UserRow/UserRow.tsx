@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '../Button';
+import { Button } from '../../CustomButton';
 import './UserRow.scss';
 // eslint-disable-next-line import/extensions, import/no-unresolved
-import { UpdateUser } from '../../react-app-env';
+import { UpdateUser } from '../../../react-app-env';
 
 interface Props {
   user: UpdateUser,

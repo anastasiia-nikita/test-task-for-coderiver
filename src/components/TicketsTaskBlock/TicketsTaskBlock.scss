@@ -1,4 +1,10 @@
+@import '../../utils/mixins.scss';
+
 .tickets-task-block {
   display: flex;
   gap: 30px;
+
+  @include onTablet {
+    flex-direction: column;
+  }
 }

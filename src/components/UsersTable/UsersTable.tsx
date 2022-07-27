@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UserRow } from '../UserRow';
+import { UserRow } from './UserRow';
 import './UsersTable.scss';
 import { getUser } from '../../api/api';
 // eslint-disable-next-line import/extensions, import/no-unresolved
@@ -9,8 +9,12 @@ export const UsersTable = () => {
   const [users, setUsers] = useState<UpdateUser []>([]);
 
   useEffect(() => {
-    getUser()
-      .then(usersFromServer => setUsers(usersFromServer));
+    try {
+      getUser()
+        .then(usersFromServer => setUsers(usersFromServer));
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   return (

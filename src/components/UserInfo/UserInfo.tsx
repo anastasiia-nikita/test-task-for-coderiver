@@ -10,9 +10,13 @@ export const UserInfo: React.FC = () => {
   const [user, setUser] = useState<UpdateUser | null>(null);
 
   useEffect(() => {
-    if (id !== undefined) {
-      getCurrentUser(+id)
-        .then(userFromServer => setUser(userFromServer));
+    try {
+      if (id !== undefined) {
+        getCurrentUser(+id)
+          .then(userFromServer => setUser(userFromServer));
+      }
+    } catch (error) {
+      console.log(error);
     }
   }, [id]);
 

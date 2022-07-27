@@ -1,10 +1,9 @@
-@import '../../utils/vars';
+@import '../../../utils/vars';
 
 .tickets {
   border: 1px solid $borderColor;
   border-radius: 8px;
   flex-grow: 1;
-  // width: 100%;
 
   &__header {
     display: flex;

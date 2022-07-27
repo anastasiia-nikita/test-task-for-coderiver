@@ -1,7 +1,7 @@
 import React from 'react';
 import './ActivityBlock.scss';
 // eslint-disable-next-line import/extensions, import/no-unresolved
-import { ActivBlock } from '../../react-app-env';
+import { ActivBlock } from '../../../react-app-env';
 
 interface Props {
   block: ActivBlock;

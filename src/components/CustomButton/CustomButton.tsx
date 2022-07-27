@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.scss';
+import './CustomButton.scss';
 
 interface Props {
   children: string,
