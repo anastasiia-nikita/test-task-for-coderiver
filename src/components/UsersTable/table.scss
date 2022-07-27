@@ -1,8 +1,9 @@
 @import '../../utils/vars';
 
 .table {
-  width: 100%;
+  // width: 100%;
   border-collapse: collapse; 
+  // flex-grow: 1;
 
   &__thead {
     font-weight: 700;

@@ -1,0 +1,35 @@
+@import '../../utils/vars';
+
+.input {
+  display: none;
+
+  &:checked + .input-label::before {
+    background-color: $mainBlueColor;
+    border: 2px solid transparent;
+    content: '';
+    background-image: url('/images/checked_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.input-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: $textMainColor;
+  margin: 0;
+
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    margin-right: 16px;
+    border: 2px solid $borderColor;
+    border-radius: 50%;
+  }
+}

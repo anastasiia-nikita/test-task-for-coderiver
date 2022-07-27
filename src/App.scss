@@ -10,6 +10,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 .App {
   // height: 100%;
@@ -25,7 +29,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     // display: flex;
-    // flex-grow: 1; включити
+    // flex-grow: 1; // включити
     padding: 32px 35px 0;
   }
 
@@ -39,5 +43,9 @@ body {
 
   &__users-container {
     margin-bottom: 30px;
+  }
+
+  &__tickets-task-block {
+    margin-bottom: 100px;
   }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UserRow } from '../UserRow';
 import './UsersTable.scss';
-import { getUser } from '../api/api';
+import { getUser } from '../../api/api';
 // eslint-disable-next-line import/extensions, import/no-unresolved
 import { UpdateUser } from '../../react-app-env';
 
@@ -11,7 +11,7 @@ export const UsersTable = () => {
   useEffect(() => {
     getUser()
       .then(usersFromServer => setUsers(usersFromServer));
-  });
+  }, []);
 
   return (
     <div className="App__users-container users-container">

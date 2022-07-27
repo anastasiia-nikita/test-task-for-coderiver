@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.scss';
 
 export const Sidebar: React.FC = () => (
@@ -16,11 +17,11 @@ export const Sidebar: React.FC = () => (
             <span className="navigation__title">Overview</span>
           </a>
         </li>
-        <li className="navigation__item">
-          <a className="navigation__link" href="#/">
+        <li className="navigation__item navigation__item--active">
+          <Link className="navigation__link" to="/users">
             <img className="navigation__img" src="./images/users_logo.png" alt="users-logo" />
             <span className="navigation__title">Users</span>
-          </a>
+          </Link>
         </li>
         <li className="navigation__item">
           <a className="navigation__link" href="#/">

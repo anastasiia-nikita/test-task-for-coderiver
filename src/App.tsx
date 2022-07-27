@@ -1,22 +1,20 @@
 import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.scss';
-import { Header } from './components/Header';
-import { NumbersBlocks } from './components/NumbersBlocks';
-import { Sidebar } from './components/Sidebar';
-import { TicketsTaskBlock } from './components/TicketsTaskBlock';
-import { UsersTable } from './components/UsersTable';
+import { Layout } from './components/Layout';
+import { AllUsersBlock } from './components/AllUsersBlock';
+import { UserInfo } from './components/UserInfo';
 
 export const App: React.FC = () => {
   return (
     <div className="App">
-      <Sidebar />
-
-      <main className="App__main">
-        <Header />
-        <NumbersBlocks />
-        <UsersTable />
-        <TicketsTaskBlock />
-      </main>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<AllUsersBlock />} />
+          <Route path="users" element={<Navigate to="/" />} />
+          <Route path="users/:id" element={<UserInfo />} />
+        </Route>
+      </Routes>
     </div>
   );
 };

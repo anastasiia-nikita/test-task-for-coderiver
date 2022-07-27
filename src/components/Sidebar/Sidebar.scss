@@ -40,6 +40,15 @@
     border-left: 3px solid transparent;
     padding-left: 29px;
 
+    &--active {
+      background-color: rgba(#9FA2B4, 0.08);
+      border-left: 3px solid #DDE2FF;
+
+      .navigation__title {
+        color: #DDE2FF;
+      }
+    }
+
     &:hover {
       background-color: rgba(#9FA2B4, 0.08);
       border-left: 3px solid #DDE2FF;
@@ -51,7 +60,6 @@
   }
 
   &__link {
-    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 24px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import './UserRow.scss';
 // eslint-disable-next-line import/extensions, import/no-unresolved
@@ -11,14 +12,16 @@ interface Props {
 export const UserRow: React.FC<Props> = ({ user }) => (
   <tr className="user-row">
     <td className="user-row__item user-row__item--width">
-      <div className="user-row__item-details">
-        <img className="user-row__item-img" src={user.photo} alt={user.name} />
+      <Link to={`/users/${user.id}`}>
+        <div className="user-row__item-details">
+          <img className="user-row__item-img" src={user.photo} alt={user.name} />
 
-        <div className="user-row__item-details-block">
-          <span className="user-row__item-title">{user.name}</span>
-          <span className="user-row__item-subtitle">{user.address.city}</span>
+          <div className="user-row__item-details-block">
+            <span className="user-row__item-title">{user.name}</span>
+            <span className="user-row__item-subtitle">{user.address.city}</span>
+          </div>
         </div>
-      </div>
+      </Link>
 
     </td>
 

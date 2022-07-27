@@ -1,6 +1,6 @@
 @import '../../utils/vars';
 
-.tickets {
+.tasks {
   border: 1px solid $borderColor;
   border-radius: 8px;
   flex-grow: 1;
@@ -51,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $borderColor;
-    padding: 20px 32px;
+    padding: 18px 32px;
 
     font-weight: 600;
     font-size: 14px;
@@ -64,11 +64,7 @@
   }
 
   &__item-title {
-    color: $textMainColor;
+    color: $tableGreyColor;
     margin: 0;
-  }
-
-  &__item-number {
-    color: $tableHeaderColor;
   }
 }
