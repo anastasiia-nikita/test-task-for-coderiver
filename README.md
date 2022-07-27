@@ -1,6 +1,6 @@
 # Tesk task for Coderiver
 
-This repository is demonstrated a possible solution of visualization of the layout design of the Monza Motorsport.
+This repository is demonstrated a possible solution of visualization of the layout design.
 
 ➡️ [DEMO LINK](https://anastasiia-nikita.github.io/test-task-for-coderiver/)
 
