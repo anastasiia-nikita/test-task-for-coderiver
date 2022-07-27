@@ -9,6 +9,7 @@ This repository is demonstrated a possible solution of visualization of the layo
 ## Description
 
 In order to create this project, I have used React, React Router and SCSS. 
+
 Implemented the ability to select a user by clicking on a name or photo and get additional information about this user with a corresponding change in url.
 You can return to all users by clicking Users on the sidebar.
 
